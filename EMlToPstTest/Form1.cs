@@ -57,7 +57,6 @@ namespace EMlToPstTest
 
 
             RDOSession session = new RDOSession(); // throws exception 1
-            //session.Logon("test@coffral.co.th");
 
             session.LogonPstStore(pstOutputPath.Text);
             RDOFolder folder = session.GetDefaultFolder(rdoDefaultFolders.olFolderInbox);
